@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Singing From Scratch · Cheryl Porter</title>
+<link rel="stylesheet" href="https://use.typekit.net/iit3jcu.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&family=Yellowtail&display=swap">
+<style>
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:#F3F8FB;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FF0A8E;text-decoration:none}
+a:hover{color:#5A14FF}
+@keyframes sfsBeamL{from{transform:rotate(-28deg)}to{transform:rotate(-21deg)}}
+@keyframes sfsBeamR{from{transform:rotate(28deg)}to{transform:rotate(21deg)}}
+@media (prefers-reduced-motion:reduce){.sfs-beam{animation:none!important}}
+</style>
+<script src="effects.js"></script>
+</helmet>
+
+<div style="font-family:'DM Sans',system-ui,sans-serif;color:#141026;background:#F3F8FB;min-height:100vh">
+
+  <header style="background:#FFF;border-bottom:1px solid #E7EEF3">
+    <div style="max-width:1200px;margin:0 auto;padding:8px clamp(14px,3vw,24px);display:flex;align-items:center;gap:12px">
+      <a href="#top" style="flex:0 1 auto;min-width:44px;height:44px;overflow:hidden;display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;color:#141026" style-hover="color:#141026">
+        <img src="assets/site/site-logo.png" alt="" style="height:44px;width:auto;display:block">
+        <span style="font-family:'Rubik',sans-serif;font-weight:700;font-size:16px;white-space:nowrap">Cheryl Porter Method</span>
+      </a>
+      <span style="flex:1"></span>
+      <a href="#checkout" style="flex:none;display:flex;align-items:center;gap:6px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;border:1px solid #F2B400;white-space:nowrap" style-hover="color:#141026;background:#FFD23F">Get Access · $27 <span>➔</span></a>
+    </div>
+  </header>
+
+  <sc-if value="{{ hero5 }}" hint-placeholder-val="{{ true }}">
+  <section id="top" data-screen-label="Hero" style="position:relative;overflow:hidden;color:#FFF;text-align:center;background:linear-gradient(180deg,rgba(62,12,130,0.96) 0px,rgba(78,16,142,0.9) 430px,rgba(106,27,154,0.45) 600px,rgba(106,27,154,0) 860px),url('assets/site/hero-curtains-wide.jpg') center top/cover no-repeat,#C2188F">
+    {{ beams }}
+    <div style="position:relative;max-width:1000px;margin:0 auto;padding:clamp(26px,3.2vw,46px) 20px 0;display:flex;flex-direction:column;align-items:center;gap:14px">
+      <h1 style="margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;font-family:'Rubik',sans-serif">
+        <span style="background:#FFF;color:#C4006E;font-weight:700;font-size:clamp(14px,1.5vw,17px);line-height:1.2;padding:8px 16px;border-radius:999px;box-shadow:0 10px 22px -10px rgba(40,0,80,0.7)">World's #1 Vocal Coach Reveals</span>
+        <span style="font-weight:900;font-size:clamp(36px,6vw,80px);line-height:0.98;letter-spacing:-0.035em;text-wrap:balance;text-shadow:0 5px 0 rgba(48,0,96,0.6),0 16px 36px rgba(40,0,80,0.5)">How To Sing With <span style="color:#FFD21F">Power, Confidence, And Emotion</span></span>
+        <span style="font-family:'Yellowtail',cursive;font-weight:400;font-size:clamp(36px,4.6vw,60px);line-height:1;color:#FFE27A;transform:rotate(-3deg);text-shadow:0 3px 14px rgba(40,0,80,0.6)">Starting Today</span>
+      </h1>
+      <p style="margin:0;max-width:600px;font-size:clamp(17px,1.6vw,20px);line-height:1.5;font-weight:500;text-wrap:pretty;text-shadow:0 2px 10px rgba(40,0,80,0.6)">Even if you've never taken a lesson, been told you're tone deaf, or never sung outside the shower...</p>
+    </div>
+    <div style="position:relative;max-width:1120px;margin:clamp(22px,2.8vw,36px) auto 0;padding:0 clamp(14px,2vw,20px) clamp(30px,4vw,54px)">
+      <div style="position:absolute;left:50%;top:6%;width:min(980px,104%);height:74%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,236,150,0.5) 0%,rgba(255,226,122,0.18) 55%,rgba(255,226,122,0) 100%);pointer-events:none"></div>
+      <div style="position:relative;display:flex;align-items:flex-end;justify-content:center">
+        <div style="position:relative;flex:1 1 0;min-width:0;max-width:820px;margin-bottom:20px">
+          <div style="position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;border:5px solid #FFF;background:#170A3D;box-shadow:0 34px 60px -22px rgba(40,0,90,0.85);cursor:pointer">
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#FF0A8E 0%,#A52BD6 52%,#2A9FE8 100%)"></div>
+            <div style="position:absolute;right:2%;bottom:0;height:92%;width:clamp(0px,calc((900px - 100vw) * 999),60%);overflow:hidden"><img src="assets/site/pointing2.webp" alt="Mama Cheryl" style="position:absolute;right:0;bottom:0;height:100%;width:auto;display:block"></div>
+            <span style="position:absolute;left:14px;bottom:12px;background:rgba(20,16,38,0.72);color:#FFF;font-size:12px;font-weight:700;line-height:1;padding:6px 10px;border-radius:999px">VSL placeholder</span>
+            <span style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(64px,9vw,96px);aspect-ratio:1;border-radius:50%;background:#FFC400;border:4px solid #FFF;box-shadow:0 14px 30px -8px rgba(20,0,60,0.8);display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;margin-left:8%;border-style:solid;border-width:clamp(11px,1.5vw,16px) 0 clamp(11px,1.5vw,16px) clamp(18px,2.5vw,26px);border-color:transparent transparent transparent #141026"></span></span>
+          </div>
+          <div style="position:absolute;z-index:2;left:clamp(-30px,-2.2vw,-8px);top:clamp(-34px,-2.6vw,-12px);width:clamp(78px,9.5vw,112px);aspect-ratio:1;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;transform:rotate(-10deg);filter:drop-shadow(0 10px 12px rgba(40,0,80,0.5));color:#141026;font-family:'Rubik',sans-serif;line-height:1"><span style="position:absolute;inset:9%;z-index:-1;border-radius:10%;background:#FFC400;transform:rotate(0deg)"></span><span style="position:absolute;inset:9%;z-index:-1;border-radius:10%;background:#FFC400;transform:rotate(22.5deg)"></span><span style="position:absolute;inset:9%;z-index:-1;border-radius:10%;background:#FFC400;transform:rotate(45deg)"></span><span style="position:absolute;inset:9%;z-index:-1;border-radius:10%;background:#FFC400;transform:rotate(67.5deg)"></span>
+            <span style="font-weight:700;font-size:clamp(10px,1.1vw,13px)">Just</span>
+            <span style="font-weight:900;font-size:clamp(24px,3vw,36px);letter-spacing:-0.03em">$27</span>
+            <span style="font-weight:700;font-size:clamp(10px,1.1vw,13px)">today</span>
+          </div>
+        </div>
+        <img src="assets/site/pointing2.webp" alt="Mama Cheryl pointing at the video" style="position:relative;z-index:2;flex:none;display:block;height:auto;width:clamp(0px,calc((100vw - 900px) * 999),340px);margin-left:clamp(-64px,calc((900px - 100vw) * 999),0px);filter:drop-shadow(0 20px 36px rgba(40,0,80,0.5))">
+      </div>
+      <div ref="{{ heroCtaRef }}" style="position:relative;z-index:3;background:#FFF;color:#141026;border-radius:20px;padding:clamp(16px,2vw,22px) clamp(16px,2.6vw,30px);box-shadow:0 30px 60px -24px rgba(40,0,90,0.8);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px clamp(18px,3vw,36px)">
+        <a href="#checkout" style="display:flex;align-items:center;gap:10px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(18px,2vw,23px);padding:19px 34px;border-radius:14px;border:1px solid #F2B400;box-shadow:0 7px 0 #E0A200,0 24px 40px -14px rgba(255,170,0,0.8)" style-hover="color:#141026;background:#FFD23F">Get Instant Access - Just $27 <span>➔</span></a>
+        <div style="display:flex;flex-direction:column;gap:6px;text-align:center">
+          <p style="margin:0;font-size:17px;font-weight:700;color:#141026">Regular <s style="color:#6B6785">$197</s> - <span style="color:#D6007A">Save $170 Today</span></p>
+          <p style="margin:0;font-size:14.5px;font-weight:500;color:#4A4766">✓ 30-Day Guarantee · ✓ Secure Checkout · ✓ Instant Access</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <sc-if value="{{ showPress }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#F8FCFF;border-bottom:1px solid #E7EEF3;padding:8px 24px">
+      <div style="max-width:1040px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 28px">
+        <span style="font-family:'Rubik',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.24em;color:#3A4A66;white-space:nowrap">AS SEEN ON</span>
+        <img src="assets/site/as-seen-on.png" alt="CNN, Disney, FOX, Good Morning America, The Ellen DeGeneres Show, Today" style="display:block;width:min(100%,720px);height:auto">
+      </div>
+    </div>
+  </sc-if>
+
+  <div data-screen-label="Proof" style="background:#FFF;border-bottom:1px solid #E7EEF3;padding:18px 24px">
+    <div style="max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px 20px;text-align:center">
+      <div style="display:flex;flex-direction:column;gap:2px"><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1;letter-spacing:-0.03em;color:#E0007A">40M+</p><p style="margin:0;font-size:14.5px;font-weight:500;line-height:1.3;color:#3A3652">followers on social media</p></div>
+      <div style="display:flex;flex-direction:column;gap:2px"><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1;letter-spacing:-0.03em;color:#E0007A">100,000+</p><p style="margin:0;font-size:14.5px;font-weight:500;line-height:1.3;color:#3A3652">singers coached</p></div>
+      <div style="display:flex;flex-direction:column;gap:2px"><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1;letter-spacing:-0.03em;color:#E0007A">150+</p><p style="margin:0;font-size:14.5px;font-weight:500;line-height:1.3;color:#3A3652">countries</p></div>
+      <div style="display:flex;flex-direction:column;gap:2px"><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1;letter-spacing:-0.03em;color:#E0007A">30+</p><p style="margin:0;font-size:14.5px;font-weight:500;line-height:1.3;color:#3A3652">years as a performer</p></div>
+    </div>
+  </div>
+
+
+  <sc-if value="{{ storyMobile }}" hint-placeholder-val="{{ false }}">
+  <section id="story" data-screen-label="Real talk" style="color:#FFF;background:linear-gradient(160deg,#5A14C8 0%,#8E1CB4 52%,#C2188F 100%);padding:36px 18px 40px;overflow:hidden">
+    <div style="max-width:480px;margin:0 auto;display:flex;flex-direction:column;align-items:center">
+      <p style="margin:0;font-family:'Yellowtail',cursive;font-size:30px;line-height:1;color:#FFE27A;text-align:center">Honey, can I be real with you?</p>
+      <h2 style="margin:10px 0 0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(28px,8vw,36px);line-height:1.06;letter-spacing:-0.025em;text-align:center;text-wrap:balance;text-shadow:0 3px 0 rgba(50,0,90,0.3)">You've been hiding your voice <span style="color:#FFC400">long enough</span></h2>
+      <div style="position:relative;width:100%;margin-top:14px;margin-bottom:-22px;height:clamp(240px,66vw,292px);overflow:hidden;display:flex;justify-content:center;align-items:flex-start">
+        <div style="position:absolute;left:50%;top:0;width:min(92%,340px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.5) 0%,rgba(255,170,225,0.28) 42%,rgba(255,170,225,0) 68%)"></div>
+        <img src="assets/sfs/cheryl-mic-cheer.webp" alt="Mama Cheryl singing into a microphone with her fist in the air" style="position:absolute;left:50%;top:0;transform:translateX(-50%);display:block;width:min(92%,340px);height:auto;filter:drop-shadow(0 16px 30px rgba(30,0,70,0.45))">
+      </div>
+      <div style="position:relative;z-index:2;width:100%;background:#FFF;color:#141026;border-radius:22px;padding:22px 20px;box-shadow:0 26px 50px -22px rgba(30,0,70,0.8);display:flex;flex-direction:column;gap:12px">
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Maybe you only sing when nobody's listening. Maybe someone told you years ago that you “can't sing.” Maybe you've convinced yourself it's too late.</p>
+        <p style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:21px;line-height:1.2;color:#D6007A;text-wrap:balance">Sweetheart, you're exactly who I made this for.</p>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">After coaching 100,000+ singers in 150+ countries, I can tell you the real reason you're stuck has nothing to do with talent. <strong style="color:#141026">It has to do with technique.</strong></p>
+      </div>
+      <a href="#checkout" style="margin-top:22px;width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:19px;padding:17px 20px;border-radius:12px;border:3px solid #FFF;box-shadow:0 8px 0 rgba(60,0,100,0.5),0 22px 40px -10px rgba(30,0,70,0.7)" style-hover="color:#141026;background:#FFD23F">Get Instant Access - Just $27 <span>➔</span></a>
+      <p style="margin:20px 0 0;font-size:15px;font-weight:700;text-align:center">Regular <s>$197</s> - Save $170 Today</p>
+    </div>
+  </section>
+  </sc-if>
+  <sc-if value="{{ storyDesktop }}" hint-placeholder-val="{{ true }}">
+  <section id="story" data-screen-label="Real talk" style="color:#FFF;background:linear-gradient(135deg,#5A14C8 0%,#8E1CB4 52%,#C2188F 100%);padding:clamp(36px,4.5vw,60px) 20px 0;overflow:hidden">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(8px,3vw,48px);align-items:center">
+      <div style="flex:1 1 380px;display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding-bottom:clamp(32px,4.5vw,60px)">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(28px,3vw,38px);line-height:1;color:#FFE27A">Honey, can I be real with you?</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(28px,3.6vw,44px);line-height:1.08;letter-spacing:-0.025em;text-wrap:balance;text-shadow:0 3px 0 rgba(50,0,90,0.3)">You've been hiding your voice <span style="color:#FFC400">long enough</span></h2>
+        <p style="margin:0;font-size:18px;line-height:1.55;text-wrap:pretty">Maybe you only sing when nobody's listening. Maybe someone told you years ago that you “can't sing.” Maybe you've convinced yourself it's too late.</p>
+        <p style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(20px,2.2vw,24px);line-height:1.25;color:#FFE27A;text-wrap:balance">Sweetheart, you're exactly who I made this for.</p>
+        <p style="margin:0;font-size:18px;line-height:1.55;text-wrap:pretty">After coaching 100,000+ singers in 150+ countries, I can tell you the real reason you're stuck has nothing to do with talent. <strong>It has to do with technique.</strong></p>
+        <a href="#checkout" style="margin-top:6px;display:flex;align-items:center;gap:10px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(17px,2vw,21px);padding:17px 28px;border-radius:12px;border:3px solid #FFF;box-shadow:0 8px 0 rgba(60,0,100,0.5),0 22px 40px -10px rgba(30,0,70,0.7)" style-hover="color:#141026;background:#FFD23F">Get Instant Access - Just $27 <span>➔</span></a>
+        <p style="margin:6px 0 0;font-size:15px;font-weight:700">Regular <s>$197</s> - Save $170 Today</p>
+      </div>
+      <div style="flex:1 1 380px;align-self:stretch;position:relative;min-height:clamp(400px,48vw,620px)">
+        <div style="position:absolute;left:50%;top:4%;width:min(118%,620px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.5) 0%,rgba(255,170,225,0.28) 42%,rgba(255,170,225,0) 68%)"></div>
+        <img src="assets/sfs/cheryl-mic-cheer.webp" alt="Mama Cheryl singing into a microphone with her fist in the air" style="position:absolute;left:50%;top:0;transform:translateX(-50%);display:block;width:min(108%,580px);height:auto;filter:drop-shadow(0 20px 40px rgba(30,0,70,0.5))">
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="master" data-screen-label="What you'll master" style="padding:clamp(40px,5vw,64px) 20px">
+    <div style="max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:22px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.8vw,34px);line-height:1;color:#E0007A">What you'll master</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,50px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">Inside <span style="color:#FF0A8E">Singing From Scratch</span></h2>
+        <p style="margin:0;max-width:560px;font-size:18px;line-height:1.5;color:#3A3652;text-wrap:pretty">Six of Mama Cheryl's signature exercises.</p>
+      </div>
+      <div style="width:100%;display:grid">
+        <div style="grid-area:1/1;visibility:{{ p0.v }};opacity:{{ p0.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#FFE94D 0%,#FFC400 55%,#FF9A00 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🍳</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Biscuit &amp; Gravy Warm-up</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Unlock Your Natural Voice</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Sweetheart, this is where it all starts. This warm-up gently opens up your voice and gets everything flowing... so you can finally hear what your real voice sounds like. Most students tell me this is the moment it clicks.</p>
+            </div>
+          </div>
+        <div style="grid-area:1/1;visibility:{{ p1.v }};opacity:{{ p1.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#FF8AD0 0%,#FF0A8E 60%,#D6007A 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🍬</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Cotton Candy Exercise</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Hit High Notes With Power &amp; Control</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Darling, high notes don't have to be scary. This exercise trains your voice to reach notes that feel out of range right now... and land on them with ease. The cracking and straining fades, and real confidence takes its place.</p>
+            </div>
+          </div>
+        <div style="grid-area:1/1;visibility:{{ p2.v }};opacity:{{ p2.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#FFB03A 0%,#FF6A3D 50%,#FF0A8E 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🍗</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Kentucky Fried Consonants</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Sing With Clear Diction</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Ever listen to someone sing and can't make out a word? Baby, that won't be you. This technique helps every lyric come through clean and clear... so your audience doesn't just hear you, they feel what you're saying.</p>
+            </div>
+          </div>
+        <div style="grid-area:1/1;visibility:{{ p3.v }};opacity:{{ p3.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#7B2FF7 0%,#C21BD1 55%,#FF0A8E 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🔥</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Pressure Cooker Workout</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Build Unstoppable Vocal Strength</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">A strong voice is a voice you can trust, honey. This workout builds power and stamina that lets you sing longer, project further, and hold a note with real control. Strength training for your voice.</p>
+            </div>
+          </div>
+        <div style="grid-area:1/1;visibility:{{ p4.v }};opacity:{{ p4.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#9B4DFF 0%,#7B2FF7 55%,#5A14C8 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🍫</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Chocolate Molten Technique</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Melt Away Vocal Tension</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">That tight feeling in your throat when you reach for a note? Baby, that's tension... and this technique melts it away. Your throat opens up and the notes that used to feel like a struggle start flowing out smooth and easy.</p>
+            </div>
+          </div>
+        <div style="grid-area:1/1;visibility:{{ p5.v }};opacity:{{ p5.o }};transition:opacity .35s ease;background:#FFF;border:1px solid #EFE3F3;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -34px rgba(90,20,255,0.45);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))">
+            <div style="position:relative;overflow:hidden;min-height:clamp(200px,26vw,320px);background:linear-gradient(135deg,#3FE0C8 0%,#13B8D8 55%,#0A86D8 100%);display:flex;align-items:center;justify-content:center">
+              <img src="assets/sfs/exercise-placeholder.gif" alt="Mama Cheryl demonstrating the exercise" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+              <span style="position:absolute;left:14px;top:14px;width:54px;height:54px;border-radius:16px;background:#FFF;box-shadow:0 10px 20px -8px rgba(40,0,70,0.5);display:flex;align-items:center;justify-content:center;font-size:28px;line-height:1;transform:rotate(-6deg)">🍧</span>
+            </div>
+            <div style="padding:clamp(24px,3.4vw,44px);min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:10px;text-align:left">
+              <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.6vw,32px);line-height:1;color:#E0007A">Snow Cone Warm-Down</p>
+              <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-0.025em;color:#141026;text-wrap:balance">Protect &amp; Preserve Your Voice</h3>
+              <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Most people skip this step, sweetheart. Your voice needs to cool down after every session, just like a dancer stretches after a performance. This keeps you protected and ready to sing tomorrow.</p>
+            </div>
+          </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <button type="button" onClick="{{ exPrev }}" aria-label="Previous exercise" style="width:44px;height:44px;border-radius:50%;border:1px solid #F0D7E6;background:#FFF;color:#C4006E;font-size:22px;font-weight:700;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+        <div style="display:flex;align-items:center;gap:7px">
+          <sc-for list="{{ exDots }}" as="d" hint-placeholder-count="6">
+            <span style="height:8px;border-radius:999px;transition:width .25s ease,background .25s ease;width:{{ d.w }};background:{{ d.bg }}"></span>
+          </sc-for>
+        </div>
+        <button type="button" onClick="{{ exNext }}" aria-label="Next exercise" style="width:44px;height:44px;border-radius:50%;border:1px solid #F0D7E6;background:#FFF;color:#C4006E;font-size:22px;font-weight:700;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:6px;text-align:center">
+        <a href="#checkout" style="display:flex;align-items:center;gap:10px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(17px,2vw,21px);padding:17px 30px;border-radius:12px;border:1px solid #F2B400;box-shadow:0 14px 28px -10px rgba(255,170,0,0.7)" style-hover="color:#141026;background:#FFD23F">Get Instant Access - Just $27 <span>➔</span></a>
+        <p style="margin:0;font-size:15.5px;font-weight:700;color:#141026">Regular <s>$197</s> - Save $170 Today</p>
+        <p style="margin:0;font-size:14.5px;font-weight:500;color:#4A4766">✓ 30-Day Guarantee · ✓ Secure Checkout · ✓ Instant Access</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mama-cheryl" data-screen-label="Mama Cheryl" style="padding:0 20px clamp(40px,5vw,64px)">
+    <div style="max-width:1120px;margin:0 auto;background:#FFF;border:1px solid #E9DDF2;border-radius:24px;overflow:hidden;box-shadow:0 26px 54px -30px rgba(90,20,255,0.35);display:flex;flex-wrap:wrap">
+      <div style="flex:1 1 340px;align-self:stretch;min-height:380px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 44%,rgba(255,255,255,0.42) 0%,rgba(255,255,255,0) 62%),linear-gradient(160deg,#5A14C8 0%,#6A1B9A 55%,#A31CB8 100%)">
+        <img src="assets/sfs/cheryl-vocal-star.webp" alt="Mama Cheryl waving in a Vocal Star t-shirt" style="position:absolute;left:0;bottom:0;width:100%;height:90%;object-fit:contain;object-position:50% 100%;display:block">
+      </div>
+      <div style="flex:1.3 1 400px;padding:clamp(24px,3.6vw,48px);display:flex;flex-direction:column;justify-content:center;gap:14px">
+        <div style="display:flex"><span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:14px;padding:7px 14px;border-radius:999px;white-space:nowrap">Meet your instructor</span></div>
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 14px">
+          <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(30px,3.8vw,46px);line-height:1.06;letter-spacing:-0.025em">Mama Cheryl</h2>
+          <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.8vw,32px);line-height:1.1;color:#E0007A">World’s #1 Vocal Coach</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:16.5px;line-height:1.55;color:#3A3652;text-wrap:pretty">
+          <p style="margin:0">Cheryl Porter is a formally trained opera singer with more than 30 years of experience as a performer, from the Italian version of “The Circle of Life” for Disney’s The Lion King to performances at the Vatican for The Pope and Luciano Pavarotti.</p>
+          <p style="margin:0">She has collaborated with Andrea Bocelli, Mariah Carey, and Bono of U2, and recorded over 20 albums ranging from classical to contemporary.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#F6EEFF;border-radius:999px;padding:7px 13px;font-size:14px;color:#2A2540;white-space:nowrap">Guest Judge on <strong>American Idol</strong></span>
+          <span style="background:#F6EEFF;border-radius:999px;padding:7px 13px;font-size:14px;color:#2A2540;white-space:nowrap">Trained singers from <strong>The Voice</strong></span>
+          <span style="background:#F6EEFF;border-radius:999px;padding:7px 13px;font-size:14px;color:#2A2540;white-space:nowrap"><strong>Disney</strong> and Broadway</span>
+          <span style="background:#F6EEFF;border-radius:999px;padding:7px 13px;font-size:14px;color:#2A2540;white-space:nowrap"><strong>Golden Buzzer</strong> Winners</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showTestimonials }}" hint-placeholder-val="{{ true }}">
+    <section data-screen-label="Students" style="padding:0 20px">
+      <div style="max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:22px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+          <span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.16em;padding:8px 16px;border-radius:999px">★★★★★</span>
+          <h2 style="margin:0;max-width:820px;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,50px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">Join <span style="color:#FF0A8E">100,000+ Singers</span> Finding Their Voice In 2026</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">“My voice has improved significantly and is <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">reaching an entirely new level.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Enrico C.</p></div>
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">"I’ve always wanted to sing like Steve Perry and Mama Cheryl’s course <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">helped me achieve my objectives.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Marlene H.</p></div>
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">“Cheryl teaches you (the) right mindset! <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">It has completely changed my LIFE.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Beatriz O.</p></div>
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">“All my friends are complimenting my <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">NEW TRANSFORMED VOICE.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Jessan D.</p></div>
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">“MaMa Cheryl teaches <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">more than just Vocal Exercises and Singing.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Marie B.</p></div>
+          <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(255,10,142,0.35);display:flex;flex-direction:column;justify-content:space-between;gap:18px"><p style="margin:0;font-size:17px;line-height:1.5;text-wrap:pretty">“Thank you Mama Cheryl and <span style="font-weight:700;background:linear-gradient(180deg,transparent 58%,#FFD84D 58%)">I LOVE YOU.</span>”</p><p style="margin:0;font-family:'Rubik',sans-serif;font-weight:700;font-size:15px;color:#4A4766">Faati</p></div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <section id="inside" data-screen-label="What's inside" style="padding:clamp(40px,5vw,64px) 20px">
+    <div style="max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:22px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;margin-bottom:4px">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.8vw,34px);line-height:1;color:#E0007A">What's inside</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,50px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">Singing From Scratch</h2>
+      </div>
+      <div style="background:#FFF;border:1px solid #F4DCEB;border-radius:24px;overflow:hidden;box-shadow:0 26px 54px -30px rgba(194,27,209,0.45);display:flex;flex-wrap:wrap">
+        <div style="flex:1 1 340px;min-height:280px;background:radial-gradient(circle at 50% 46%,rgba(255,255,255,0.6) 0%,rgba(255,200,235,0.3) 38%,rgba(255,200,235,0) 66%),linear-gradient(135deg,#7B2FF7 0%,#C21BD1 55%,#FF0A8E 100%);display:flex;align-items:center;justify-content:center;padding:28px">
+          <img src="assets/sfs/icon-course.webp" alt="Singing From Scratch Complete Course on a desktop screen" style="display:block;width:100%;max-width:440px;height:auto;filter:drop-shadow(0 18px 30px rgba(40,0,70,0.45))">
+        </div>
+        <div style="flex:1.25 1 380px;padding:clamp(24px,3.4vw,44px);display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+            <span style="background:linear-gradient(135deg,#7B2FF7,#FF0A8E);color:#FFF;font-family:'Rubik',sans-serif;font-weight:800;font-size:14px;padding:6px 14px;border-radius:999px;white-space:nowrap">The complete system</span>
+            <span style="background:#FFF1B8;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px;white-space:nowrap">$197 Value</span>
+          </div>
+          <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(25px,3vw,34px);line-height:1.1;letter-spacing:-0.02em;text-wrap:balance">Singing From Scratch Complete Course</h3>
+          <p style="margin:0;font-weight:700;font-size:17px;line-height:1.4">Everything you need to start singing with confidence:</p>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.4;color:#2A2540">
+            <div style="display:grid;grid-template-columns:22px 1fr;gap:10px"><span style="width:22px;height:22px;margin-top:1px;border-radius:50%;background:#FFC400;color:#141026;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span>Start unlocking your natural voice from your very first session</span></div>
+            <div style="display:grid;grid-template-columns:22px 1fr;gap:10px"><span style="width:22px;height:22px;margin-top:1px;border-radius:50%;background:#FFC400;color:#141026;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span>Hit high notes without straining or cracking</span></div>
+            <div style="display:grid;grid-template-columns:22px 1fr;gap:10px"><span style="width:22px;height:22px;margin-top:1px;border-radius:50%;background:#FFC400;color:#141026;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span>Sing with rich, full tone that's uniquely yours</span></div>
+            <div style="display:grid;grid-template-columns:22px 1fr;gap:10px"><span style="width:22px;height:22px;margin-top:1px;border-radius:50%;background:#FFC400;color:#141026;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span>Build the breath control behind every great singer</span></div>
+            <div style="display:grid;grid-template-columns:22px 1fr;gap:10px"><span style="width:22px;height:22px;margin-top:1px;border-radius:50%;background:#FFC400;color:#141026;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span>Land every note with accuracy and confidence</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:22px">
+        <div style="background:#FFF;border:1px solid #EFE3F3;border-radius:22px;padding:clamp(20px,2.6vw,28px);box-shadow:0 20px 44px -28px rgba(90,20,255,0.35);display:grid;grid-template-columns:clamp(96px,24vw,150px) minmax(0,1fr);gap:clamp(16px,2.4vw,24px);align-items:start">
+          <img src="assets/sfs/icon-tracker.webp" alt="Singing Progress Tracker" style="display:block;width:100%;height:auto;filter:drop-shadow(0 14px 18px rgba(40,0,70,0.3))">
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+              <span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:999px">Step 1: Build your foundation</span>
+              <span style="background:#FFF1B8;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;white-space:nowrap">$197 Value</span>
+            </div>
+            <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:23px;line-height:1.12;letter-spacing:-0.02em">Singing Progress Tracker</h3>
+            <p style="margin:0;font-weight:700;font-size:16px;line-height:1.4">Watch your transformation happen in real time:</p>
+            <div style="display:flex;flex-direction:column;gap:7px;font-size:16px;line-height:1.4;color:#3A3652">
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>See exactly how far your voice has come each week</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Know what to practice next without guessing</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Track the wins your ears might miss</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FFF;border:1px solid #EFE3F3;border-radius:22px;padding:clamp(20px,2.6vw,28px);box-shadow:0 20px 44px -28px rgba(90,20,255,0.35);display:grid;grid-template-columns:clamp(96px,24vw,150px) minmax(0,1fr);gap:clamp(16px,2.4vw,24px);align-items:start">
+          <img src="assets/sfs/icon-community.webp" alt="Cheryl Porter's Singer Tribe private community" style="display:block;width:100%;height:auto;filter:drop-shadow(0 14px 18px rgba(40,0,70,0.3))">
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+              <span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:999px">Step 2: Stay supported</span>
+              <span style="background:#FFF1B8;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;white-space:nowrap">$214 Value</span>
+            </div>
+            <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:23px;line-height:1.12;letter-spacing:-0.02em">Cheryl Porter's Singer Tribe</h3>
+            <p style="margin:0;font-weight:700;font-size:16px;line-height:1.4">A worldwide family of singers cheering you on:</p>
+            <div style="display:flex;flex-direction:column;gap:7px;font-size:16px;line-height:1.4;color:#3A3652">
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Get support from singers who started right where you are</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Share your progress in a safe, judgment-free space</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Feel like part of a family, not just a course</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FFF;border:1px solid #EFE3F3;border-radius:22px;padding:clamp(20px,2.6vw,28px);box-shadow:0 20px 44px -28px rgba(90,20,255,0.35);display:grid;grid-template-columns:clamp(96px,24vw,150px) minmax(0,1fr);gap:clamp(16px,2.4vw,24px);align-items:start">
+          <img src="assets/sfs/icon-sheets.webp" alt="Sheet Music Collection" style="display:block;width:100%;height:auto;filter:drop-shadow(0 14px 18px rgba(40,0,70,0.3))">
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+              <span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:999px">Step 3: Take it further</span>
+              <span style="background:#FFF1B8;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;white-space:nowrap">$497 Value</span>
+            </div>
+            <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:23px;line-height:1.12;letter-spacing:-0.02em">Sheet Music Collection</h3>
+            <p style="margin:0;font-weight:700;font-size:16px;line-height:1.4">Handpicked songs that grow with you:</p>
+            <div style="display:flex;flex-direction:column;gap:7px;font-size:16px;line-height:1.4;color:#3A3652">
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Practice with songs handpicked to match your level</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Build confidence by singing real music, not just scales</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Keep your practice sessions fun and fresh</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FFF;border:1px solid #EFE3F3;border-radius:22px;padding:clamp(20px,2.6vw,28px);box-shadow:0 20px 44px -28px rgba(90,20,255,0.35);display:grid;grid-template-columns:clamp(110px,28vw,190px) minmax(0,1fr);gap:clamp(16px,2.4vw,24px);align-items:start">
+          <img src="assets/sfs/icon-workbook.webp" alt="Beginner's Vocal Workbook" style="display:block;width:100%;height:auto;filter:drop-shadow(0 14px 18px rgba(40,0,70,0.3))">
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">
+              <span style="background:#FFE3F1;color:#C4006E;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:999px">Step 4: Perform with confidence</span>
+              <span style="background:#FFF1B8;color:#141026;font-family:'Rubik',sans-serif;font-weight:700;font-size:13.5px;padding:5px 11px;border-radius:999px;white-space:nowrap">$97 Value</span>
+            </div>
+            <h3 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:23px;line-height:1.12;letter-spacing:-0.02em">Beginners' Vocal Workbook</h3>
+            <p style="margin:0;font-weight:700;font-size:16px;line-height:1.4">The exact roadmap Mama Cheryl's pro students follow:</p>
+            <div style="display:flex;flex-direction:column;gap:7px;font-size:16px;line-height:1.4;color:#3A3652">
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Follow step-by-step exercises that deepen every lesson</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Build habits that make your progress stick</span></div>
+              <div style="display:grid;grid-template-columns:18px 1fr;gap:8px"><span style="color:#FF0A8E;font-weight:900">✓</span><span>Walk away from every session stronger than the last</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="align-self:center;width:100%;max-width:940px;margin-top:10px;background:#FFF;border:1px solid #F4DCEB;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -32px rgba(123,47,247,0.55);display:flex;flex-wrap:wrap">
+        <div style="flex:1 1 100%;box-sizing:border-box;padding:clamp(16px,3vw,34px) clamp(10px,3vw,36px) clamp(4px,1vw,10px);background:linear-gradient(180deg,#FBF1FF 0%,#FFF 100%)"><img src="assets/sfs/icon-set.webp" alt="Everything inside Singing From Scratch: the complete course, progress tracker, sheet music collection, beginner's vocal workbook and private community" style="display:block;width:100%;height:auto"></div>
+        <div style="flex:1.25 1 360px;padding:clamp(24px,3.4vw,40px);display:flex;flex-direction:column;justify-content:center;gap:16px">
+          <h3 style="margin:0 0 4px;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(24px,2.8vw,32px);line-height:1.1;letter-spacing:-0.02em;text-wrap:balance">Here's everything you get today</h3>
+          <div style="display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:50%;background:#12B76A;color:#FFF;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span style="font-size:17px;font-weight:700;line-height:1.3">Singing From Scratch Complete Course</span><span style="font-size:15px;font-weight:500;color:#4A4766;white-space:nowrap">$197 value</span></div>
+          <div style="display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:50%;background:#12B76A;color:#FFF;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span style="font-size:17px;font-weight:700;line-height:1.3">Singing Progress Tracker</span><span style="font-size:15px;font-weight:500;color:#4A4766;white-space:nowrap">$197 value</span></div>
+          <div style="display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:50%;background:#12B76A;color:#FFF;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span style="font-size:17px;font-weight:700;line-height:1.3">Cheryl Porter's Singer Tribe</span><span style="font-size:15px;font-weight:500;color:#4A4766;white-space:nowrap">$214 value</span></div>
+          <div style="display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:50%;background:#12B76A;color:#FFF;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span style="font-size:17px;font-weight:700;line-height:1.3">Sheet Music Collection</span><span style="font-size:15px;font-weight:500;color:#4A4766;white-space:nowrap">$497 value</span></div>
+          <div style="display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center"><span style="width:26px;height:26px;border-radius:50%;background:#12B76A;color:#FFF;font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center">✓</span><span style="font-size:17px;font-weight:700;line-height:1.3">Beginners' Vocal Workbook</span><span style="font-size:15px;font-weight:500;color:#4A4766;white-space:nowrap">$97 value</span></div>
+        </div>
+        <div style="flex:1 1 300px;background:linear-gradient(150deg,#5A14C8 0%,#8E1CB4 55%,#C2188F 100%);color:#FFF;padding:clamp(24px,3.4vw,40px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center">
+          <p style="margin:0;font-size:17px;font-weight:700">Total value <s>$1,202</s></p>
+          <p style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:20px;line-height:1.2">Yours today for just</p>
+          <p style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(72px,8vw,96px);line-height:1;letter-spacing:-0.03em;color:#FFC400;text-shadow:0 5px 0 rgba(50,0,90,0.35)">$27</p>
+          <a href="#checkout" style="margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:18px;line-height:1.2;text-align:center;padding:16px 20px;border-radius:12px;border:3px solid #FFF;box-shadow:0 8px 0 rgba(50,0,90,0.5)" style-hover="color:#141026;background:#FFD23F">Yes! I Want To Transform My Voice!</a>
+          <p style="margin:14px 0 0;font-size:14px;font-weight:700;line-height:1.5">30-Day Guarantee · Secure Checkout · Instant Access</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guarantee" data-screen-label="Guarantee" style="padding:0 20px clamp(40px,5vw,64px)">
+    <div style="max-width:1120px;margin:0 auto;background:#FFF;border:1px solid #F6E3A8;border-radius:24px;box-shadow:0 26px 54px -30px rgba(255,170,0,0.6);padding:clamp(26px,4vw,52px);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(24px,4vw,52px)">
+      <div style="flex:none;width:clamp(150px,18vw,196px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 28%,#FFE98A 0%,#FFC400 58%,#F2A900 100%);border:6px solid #FFF;box-shadow:0 0 0 4px #FFC400,0 22px 40px -16px rgba(255,150,0,0.8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transform:rotate(-8deg);font-family:'Rubik',sans-serif;color:#141026;line-height:1;text-align:center">
+        <span style="font-weight:900;font-size:clamp(50px,6vw,68px);letter-spacing:-0.04em">30</span>
+        <span style="font-weight:800;font-size:clamp(13px,1.5vw,16px)">Day Money-Back</span>
+        <span style="font-weight:800;font-size:clamp(13px,1.5vw,16px)">Guarantee</span>
+      </div>
+      <div style="flex:1 1 380px;display:flex;flex-direction:column;align-items:flex-start;gap:12px">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(24px,2.6vw,32px);line-height:1;color:#E0007A">Singing From Scratch comes with a...</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">100% Satisfaction Guarantee</h2>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Sweetheart, I'm so confident in what's inside Singing From Scratch that I'm backing it with a 100% satisfaction guarantee.</p>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#3A3652;text-wrap:pretty">Go through the course, try my techniques, and practice the exercises. If you don't love what's happening to your voice within 30 days, just reach out and <strong style="color:#141026">I'll refund every penny.</strong></p>
+        <a href="#checkout" style="margin-top:6px;display:flex;align-items:center;gap:10px;background:#FFC400;color:#141026;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(17px,2vw,20px);padding:16px 28px;border-radius:12px;border:1px solid #F2B400;box-shadow:0 14px 28px -10px rgba(255,170,0,0.7)" style-hover="color:#141026;background:#FFD23F">Get Instant Access - Just $27 <span>➔</span></a>
+        <p style="margin:0;font-size:14.5px;font-weight:500;color:#4A4766">✓ 30-Day Guarantee · ✓ Secure Checkout · ✓ Instant Access</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" data-screen-label="FAQ" style="background:#FFF;padding:clamp(40px,5vw,64px) 24px">
+    <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;margin-bottom:10px">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(26px,2.8vw,34px);line-height:1;color:#E0007A">Still have questions?</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,50px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">Mama's Got Answers, Sweetheart</h2>
+      </div>
+      <details ref="{{ firstFaqRef }}" style="border-bottom:1px solid #E9E4F0;padding:4px 0">
+        <summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px)"><span>I have zero singing experience. Will this work for me?</span><span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FFE3F1;color:#C4006E;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500">+</span></summary>
+        <p style="margin:0;padding:0 46px 18px 0;font-size:17px;line-height:1.6;color:#3A3652;text-wrap:pretty">Baby, this is exactly who I made it for. You don't need any experience. You don't need to read music. Some of my most incredible transformations came from people who swore they couldn't carry a tune. If you can talk, you can sing... and I'm going to show you how.</p>
+      </details>
+      <details style="border-bottom:1px solid #E9E4F0;padding:4px 0">
+        <summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px)"><span>I've been told I'm "tone deaf." Is there hope for me?</span><span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FFE3F1;color:#C4006E;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500">+</span></summary>
+        <p style="margin:0;padding:0 46px 18px 0;font-size:17px;line-height:1.6;color:#3A3652;text-wrap:pretty">Honey, more than hope. True tone deafness affects less than 4% of people. You're almost certainly not tone deaf... you're untrained. I've watched students go from "I can't sing" to making entire rooms stop and listen. That voice in your head that says you can't? It's wrong. And I'm going to prove it.</p>
+      </details>
+      <details style="border-bottom:1px solid #E9E4F0;padding:4px 0">
+        <summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px)"><span>Am I too old or young to learn to sing?</span><span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FFE3F1;color:#C4006E;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500">+</span></summary>
+        <p style="margin:0;padding:0 46px 18px 0;font-size:17px;line-height:1.6;color:#3A3652;text-wrap:pretty">I have students from 8 to 80, sweetheart. Your voice doesn't have an expiration date. These techniques work with your natural voice, not against it. It doesn't matter if you're 25 or 65. The only thing that matters is that you start.</p>
+      </details>
+      <details style="border-bottom:1px solid #E9E4F0;padding:4px 0">
+        <summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px)"><span>How long will I have access?</span><span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FFE3F1;color:#C4006E;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500">+</span></summary>
+        <p style="margin:0;padding:0 46px 18px 0;font-size:17px;line-height:1.6;color:#3A3652;text-wrap:pretty">Forever, darling. Lifetime access. Go at your own pace. Revisit anything. Practice from your couch, your car, wherever you want. No deadlines. No pressure. Your voice, your schedule.</p>
+      </details>
+      <details style="border-bottom:1px solid #E9E4F0;padding:4px 0">
+        <summary style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;font-family:'Rubik',sans-serif;font-weight:700;font-size:clamp(18px,2vw,21px)"><span>What if I try it and it's not for me?</span><span style="flex:none;width:30px;height:30px;border-radius:50%;background:#FFE3F1;color:#C4006E;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500">+</span></summary>
+        <p style="margin:0;padding:0 46px 18px 0;font-size:17px;line-height:1.6;color:#3A3652;text-wrap:pretty">Go through the course, try the techniques, give it an honest shot. If you don't love what's happening to your voice within 30 days, just reach out and I'll refund every penny. I'd never want you to keep something that isn't helping you grow, baby.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="checkout" data-screen-label="Final CTA" style="background:#FFF;padding:clamp(44px,15vw,170px) 20px clamp(40px,5vw,64px)">
+    <div style="position:relative;max-width:1100px;margin:0 auto;border-radius:24px;border:1px solid #FF7DC4;background:#C2185B url('assets/site/bg2.jpg') center/cover no-repeat;color:#FFF;box-shadow:0 30px 60px -24px rgba(120,0,80,0.5);display:flex;flex-wrap:wrap;align-items:flex-end">
+      <div style="flex:1 1 400px;padding:clamp(26px,3.8vw,48px);display:flex;flex-direction:column;align-items:flex-start;gap:14px">
+        <p style="margin:0;font-family:'Yellowtail',cursive;font-size:clamp(28px,3vw,38px);line-height:1;color:#FFC400;text-shadow:0 2px 12px rgba(60,0,90,0.4)">From my heart to yours, sweetheart...</p>
+        <h2 style="margin:0;font-family:'Rubik',sans-serif;font-weight:900;font-size:clamp(34px,4.6vw,58px);line-height:1;letter-spacing:-0.02em;text-wrap:balance;text-shadow:0 4px 20px rgba(60,0,90,0.4)">Your Voice Was Never Meant To Stay Hidden</h2>
+        <p style="margin:0;max-width:480px;font-size:18px;line-height:1.5;font-weight:500;text-shadow:0 1px 8px rgba(60,0,90,0.5)">Get the complete Singing From Scratch System &amp; bonuses for only $27 today!</p>
+        <p style="margin:0;display:flex;align-items:baseline;gap:14px;font-family:'Rubik',sans-serif;font-weight:900;line-height:1;letter-spacing:-0.03em;text-shadow:0 4px 18px rgba(60,0,90,0.45)"><s style="font-size:clamp(28px,3.4vw,40px);font-weight:700">$197</s><span style="font-size:clamp(24px,3vw,34px)">→</span><span style="font-size:clamp(68px,8.4vw,104px);color:#FFC400">$27</span></p>
+        <a href="#checkout" style="display:flex;flex-direction:column;align-items:center;gap:2px;background:#FFC400;color:#141026;padding:18px 28px;border-radius:12px;border:2px solid #FFF;box-shadow:0 12px 26px -8px rgba(80,0,60,0.5)" style-hover="color:#141026;background:#FFD23F">
+          <span style="font-family:'Rubik',sans-serif;font-weight:800;font-size:clamp(18px,2vw,22px);text-align:center;line-height:1.2">Get Instant Access - Just $27&nbsp;➔</span>
+          <span style="font-size:13px;font-weight:500">Regular $197 - Save $170 Today</span>
+        </a>
+        <p style="margin:0;font-size:14.5px;font-weight:700;text-shadow:0 1px 8px rgba(60,0,90,0.6)">✓ 30-Day Guarantee · ✓ Secure Checkout · ✓ Instant Access</p>
+      </div>
+      <div style="flex:1.3 1 440px;display:flex;justify-content:center;align-self:flex-end">
+        <img src="assets/sfs/cheryl-heart.webp" alt="Mama Cheryl with both hands on her heart, singing" style="width:100%;max-width:540px;height:auto;display:block;margin-top:clamp(-130px,calc((880px - 100vw) * 3),0px);border-bottom-right-radius:24px;filter:drop-shadow(0 18px 30px rgba(90,0,60,0.45))">
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#1B1638;color:#C9C6DD;padding:36px 24px 96px">
+    <div style="max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center">
+      <nav style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;font-size:14px;font-weight:500">
+        <a href="https://www.cherylportermethod.com/terms-of-service" style="color:#C9C6DD" style-hover="color:#FFC400">Terms</a>
+        <a href="https://www.cherylportermethod.com/privacy-policy" style="color:#C9C6DD" style-hover="color:#FFC400">Privacy</a>
+        <a href="https://www.cherylportermethod.com/contact" style="color:#C9C6DD" style-hover="color:#FFC400">Contact</a>
+        <a href="#" style="color:#C9C6DD" style-hover="color:#FFC400">Refund Policy</a>
+      </nav>
+      <div style="width:100%;height:1px;background:rgba(255,255,255,0.1)"></div>
+      <p style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.16em;color:#FFC400">CHERYL PORTER: WORLD’S #1 VOCAL COACH</p>
+    </div>
+  </footer>
+
+  <sc-if value="{{ stickyVisible }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #F4DCEB;box-shadow:0 -10px 30px rgba(29,43,79,0.15)">
+      <a href="#checkout" style="max-width:520px;margin:0 auto;display:flex;flex-direction:column;align-items:center;background:#FFC400;color:#141026;padding:10px 20px;border-radius:10px;border:1px solid #F2B400" style-hover="color:#141026">
+        <span style="font-family:'Rubik',sans-serif;font-weight:800;font-size:17px;text-align:center">Get Instant Access - Just $27&nbsp;➔</span>
+        <span style="font-size:12px;font-weight:500">Regular $197 - Save $170 Today</span>
+      </a>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;autoRotateExercises&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;showPress&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;showTestimonials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;},&quot;stickyCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversion&quot;},&quot;scrollReveal&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;buttonPulse&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  state = { pastHero: false, hero: null, ex: 0, mobile: typeof window !== 'undefined' && window.innerWidth <= 760 };
+  onSize = () => { const m = window.innerWidth <= 760; if (m !== this.state.mobile) this.setState({ mobile: m }); };
+  exPick = i => () => { this.exStop = true; this.setState({ ex: i }); };
+  exStep = d => () => { this.exStop = true; this.setState(s => ({ ex: (s.ex + d + 6) % 6 })); };
+  beams() {
+    if (this._beams) return this._beams;
+    const beam = (side, anim) => React.createElement('div', { key: side, className: 'sfs-beam', style: {
+      position: 'absolute', top: -70, [side]: 'calc(50% - min(500px, 48vw) - 210px)', width: 420, height: 980, pointerEvents: 'none',
+      transformOrigin: '50% 0', transform: 'rotate(' + (side === 'left' ? -24 : 24) + 'deg)',
+      clipPath: 'polygon(45% 0, 55% 0, 100% 100%, 0 100%)',
+      background: 'linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.14) 55%, rgba(255,255,255,0) 100%)',
+      animation: anim + ' 5.5s ease-in-out infinite alternate' } });
+    return (this._beams = React.createElement(React.Fragment, null, beam('left', 'sfsBeamL'), beam('right', 'sfsBeamR')));
+  }
+  firstFaqRef = el => { if (el && !this.faqOpened) { this.faqOpened = true; el.open = true; } };
+  heroCtaRef = el => { this.ctaEl = el; if (el) this.check(); };
+  check = () => {
+    if (!this.ctaEl) return;
+    const past = this.ctaEl.getBoundingClientRect().bottom < 0;
+    if (past !== this.state.pastHero) this.setState({ pastHero: past });
+  };
+  componentDidMount() {
+    const p = this.props; let t = 0;
+    const fx = () => window.cpEffects ? setTimeout(() => window.cpEffects({ reveal: p.scrollReveal ?? true, pulse: p.buttonPulse ?? true, shimmer: false }), 60) : (t++ < 60 && setTimeout(fx, 50));
+    fx();
+    const calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.exTimer = setInterval(() => { if (!calm && !this.exStop && (this.props.autoRotateExercises ?? true)) this.setState(s => ({ ex: (s.ex + 1) % 6 })); }, 5000);
+    window.addEventListener('scroll', this.check, { passive: true });
+    window.addEventListener('resize', this.check, { passive: true });
+    window.addEventListener('resize', this.onSize, { passive: true });
+    this.onSize();
+  }
+  componentWillUnmount() {
+    clearInterval(this.exTimer);
+    window.removeEventListener('scroll', this.check);
+    window.removeEventListener('resize', this.check);
+    window.removeEventListener('resize', this.onSize);
+  }
+  renderVals() {
+    const ex = this.state.ex, exVals = {};
+    for (let i = 0; i < 6; i++) {
+      exVals['p' + i] = { v: ex === i ? 'visible' : 'hidden', o: ex === i ? 1 : 0 };
+      exVals['t' + i] = { pick: this.exPick(i), bg: ex === i ? '#D6007A' : '#FFF', fg: ex === i ? '#FFF' : '#141026', bd: ex === i ? '#D6007A' : '#F0D7E6' };
+    }
+    return {
+      ...exVals,
+      exPrev: this.exStep(-1), exNext: this.exStep(1),
+      exDots: [0, 1, 2, 3, 4, 5].map(i => i === ex ? { w: '26px', bg: '#FF0A8E' } : { w: '8px', bg: '#E3CFE0' }),
+      heroCtaRef: this.heroCtaRef,
+      firstFaqRef: this.firstFaqRef,
+      stickyVisible: (this.props.stickyCta ?? true) && this.state.pastHero,
+      showPress: this.props.showPress ?? true,
+      beams: this.beams(),
+      storyMobile: this.state.mobile, storyDesktop: !this.state.mobile,
+      hero5: true,
+      showTestimonials: this.props.showTestimonials ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
